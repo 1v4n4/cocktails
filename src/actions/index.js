@@ -3,9 +3,6 @@ import axios from 'axios';
 const LIST_LOADING = 'LIST LOADING';
 const LIST_FAIL = 'LIST FAIL';
 const LIST_SUCCESS = 'LIST SUCCESSLIST_SUCCESS';
-const COCKTAIL_LOADING = 'COCKTAIL LOADING';
-const COCKTAIL_FAIL = 'COCKTAIL FAIL';
-const COCKTAIL_SUCCESS = 'COCKTAIL SUCCESS';
 
 const getList = (letter) => async (dispatch) => {
   console.log('letter', letter);
@@ -27,5 +24,5 @@ const getList = (letter) => async (dispatch) => {
 };
 
 export {
-  LIST_LOADING, LIST_FAIL, LIST_SUCCESS, getList
+  LIST_LOADING, LIST_FAIL, LIST_SUCCESS, getList,
 };
