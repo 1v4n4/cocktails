@@ -1,46 +1,72 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
+import React, { useEffect } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import { getCocktail } from '../actions';
 
-/* eslint-disable */
 const Cocktail = (props) => {
+  // eslint-disable-next-line
   const name = props.match.params.cocktail;
-  const state = useSelector((state) => state.cocktails)
-  const cocktail = state.data.filter(item => item.strDrink === name)
-  console.log('koktel', cocktail, cocktail[0].strIngredient1)
-  const count = 1;
-  const ing = 'strIngredient';
 
+  const cocktail = useSelector((state) => state.cocktail.data);
 
-  const ingredients = Object.keys(cocktail[0])
-          .filter(key => key.match(/ingredient/i))
-          .filter(key => !!cocktail[0][key] || cocktail[0][key] === ' ')
-          .map(key => cocktail[0][key].trim())
+  const dispatch = useDispatch();
 
-          console.log('ing', ingredients)
+  const fetchCocktail = (name) => {
+    console.log('in fetchCocktail');
+    dispatch(getCocktail(name));
+  };
 
-          const measures = Object.keys(cocktail[0])
-          .filter(key => key.match(/strMeasure/i))
-          .filter(key => !!cocktail[0][key] || cocktail[0][key] === ' ')
-          .map(key => cocktail[0][key].trim())
+  useEffect(() => {
+    fetchCocktail(name);
+  }, [name]);
 
-          console.log('ing', measures)
+  console.log('koktell', cocktail);
+  console.log('x', Object.values(cocktail)[0]);
 
+  const ingredients = Object.keys(cocktail)
+    .filter((key) => key.match(/ingredient/i))
+    .filter((key) => !!cocktail[key] || cocktail[key] === ' ')
+    .map((key) => cocktail[key].trim());
 
-  return (<div>
-  <h1>{name}</h1>
-  <h3>Category: {cocktail[0].strCategory}</h3>
-  <h3>Alcoholic: {cocktail[0].strAlcoholic === "Alcoholic" ? "Yes" : "No"}</h3>
-  <h3>Serve: {cocktail[0].strGlass}</h3>
-  <img src={cocktail[0].strDrinkThumb} alt="cocktail-img" />
-  <h3>Ingredients</h3>
-  <ul>
-  {ingredients.map((item, index) => <li>{item} - {measures[index]}</li>)}
-  </ul>
-  <h3>Instructions</h3>
-  <p>{cocktail[0].strInstructions}</p>
+  const measures = Object.keys(cocktail)
+    .filter((key) => key.match(/strMeasure/i))
+    .filter((key) => !!cocktail[key] || cocktail[key] === ' ')
+    .map((key) => cocktail[key].trim());
 
+  console.log('ing', ingredients);
+  console.log('mes', measures);
 
-  </div>);
+  return (
+    <div>
+      <h1>{name}</h1>
+      <h3>
+        Category:
+        {cocktail.strCategory}
+      </h3>
+      <h3>
+        Alcoholic:
+        {cocktail.strAlcoholic === 'Alcoholic' ? 'Yes' : 'No'}
+      </h3>
+      <h3>
+        Serve:
+        {cocktail.strGlass}
+      </h3>
+      <img src={cocktail.strDrinkThumb} alt="cocktail-img" />
+      <h3>Ingredients</h3>
+      <ul>
+        {ingredients.map((item, index) => (
+          <li key={item}>
+            {item}
+            {' '}
+            -
+            {' '}
+            {measures[index]}
+          </li>
+        ))}
+      </ul>
+      <h3>Instructions</h3>
+      <p>{cocktail.strInstructions}</p>
 
+    </div>
+  );
 };
 export default Cocktail;
