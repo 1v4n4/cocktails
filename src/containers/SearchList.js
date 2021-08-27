@@ -1,10 +1,10 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import LetterFilter from '../components/LetterFilter';
+import Search from '../components/Search';
 
-const List = () => {
-  const list = useSelector((state) => state.cocktails);
+const SearchList = () => {
+  const list = useSelector((state) => state.searched);
   console.log('list component, list:', list);
 
   const showData = () => {
@@ -36,10 +36,10 @@ const List = () => {
   return (
     <div>
       <h1>List</h1>
-      <LetterFilter />
+      <Search />
       <p>{showData()}</p>
     </div>
   );
 };
 
-export default List;
+export default SearchList;

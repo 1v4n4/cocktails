@@ -65,7 +65,7 @@ const Cocktail = (props) => {
       </ul>
       <h3>Instructions</h3>
       <p>{cocktail.strInstructions}</p>
-
+      { cocktail.strVideo && <a href={cocktail.strVideo} target="_blank" rel="noreferrer">Watch on Youtube</a>}
     </div>
   );
 };

@@ -1,11 +1,15 @@
 import '../CSS/App.css';
-import List from '../containers/List';
+import LetterList from '../containers/LetterList';
+import SearchList from '../containers/SearchList';
+import CategoryList from '../containers/CategoryList';
 
 function App() {
   return (
     <div className="App">
       <p>Hey</p>
-      <List />
+      <SearchList />
+      <LetterList />
+      <CategoryList />
     </div>
   );
 }
