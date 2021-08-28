@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Prev from '../components/CocktailPreview';
 import Search from '../components/Search';
-import { getSearch } from '../actions';
+import { getSearch } from '../actions/searchActions';
 import searchs from '../assets/search.png';
 import img1 from '../assets/img1.jpg';
 import '../CSS/searchList.css';

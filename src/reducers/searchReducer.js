@@ -1,4 +1,4 @@
-import { SEARCH_LOADING, SEARCH_FAIL, SEARCH_SUCCESS } from '../actions';
+import { SEARCH_LOADING, SEARCH_FAIL, SEARCH_SUCCESS } from '../actions/searchActions';
 
 const initialState = {
   loading: false,

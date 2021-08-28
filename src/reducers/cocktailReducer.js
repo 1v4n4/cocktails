@@ -1,4 +1,4 @@
-import { COCKTAIL_FAIL, COCKTAIL_SUCCESS, COCKTAIL_LOADING } from '../actions';
+import { COCKTAIL_FAIL, COCKTAIL_SUCCESS, COCKTAIL_LOADING } from '../actions/cocktailActions';
 
 const initialState = {
   loading: false,

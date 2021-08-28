@@ -1,4 +1,4 @@
-import { CAT_LOADING, CAT_FAIL, CAT_SUCCESS } from '../actions';
+import { CAT_LOADING, CAT_FAIL, CAT_SUCCESS } from '../actions/categoryActions';
 
 const initialState = {
   loading: false,

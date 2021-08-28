@@ -1,4 +1,4 @@
-import { ING_LOADING, ING_FAIL, ING_SUCCESS } from '../actions';
+import { ING_LOADING, ING_FAIL, ING_SUCCESS } from '../actions/ingredientsActions';
 
 const initialState = {
   loading: false,

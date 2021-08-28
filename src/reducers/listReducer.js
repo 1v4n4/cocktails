@@ -1,4 +1,4 @@
-import { LIST_LOADING, LIST_FAIL, LIST_SUCCESS } from '../actions';
+import { LIST_LOADING, LIST_FAIL, LIST_SUCCESS } from '../actions/letterActions';
 
 const initialState = {
   loading: false,

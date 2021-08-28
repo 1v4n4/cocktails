@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import Prev from '../components/CocktailPreview';
 import CatFilter from '../components/CatFilter';
-import { getCatList } from '../actions';
+import { getCatList } from '../actions/categoryActions';
 import cat from '../assets/category.png';
 
 const CategoryList = () => {

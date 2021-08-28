@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getCocktail } from '../actions';
+import { getCocktail } from '../actions/cocktailActions';
 
 const Cocktail = (props) => {
   // eslint-disable-next-line

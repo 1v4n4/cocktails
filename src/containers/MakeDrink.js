@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { getIng } from '../actions';
+import { getIng } from '../actions/ingredientsActions';
 
 const MakeDrink = () => {
   const dispatch = useDispatch();
