@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 import LetterFilter from '../components/LetterFilter';
 import { getLetterList } from '../actions';
+import '../CSS/letterList.css';
 
 const LetterList = () => {
   const list = useSelector((state) => state.cocktails);

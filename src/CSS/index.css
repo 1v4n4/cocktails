@@ -8,8 +8,11 @@
   --pale-grey: #f5f6fa;
   --indigoo: #353d60;
   --pinkk: #f5756b;
+  --indigo-dark: #000814;
+  --indigo-light: #6c8aa7;
 }
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
 /* font-family: 'Prompt', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
 /*font-family: 'Mukta', sans-serif;*/
@@ -33,4 +36,35 @@ button {
   border: none;
   color: var(--indigoo);
   font-family: 'Prompt', sans-serif;
+}
+
+
+.prev-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.prev-cart {
+margin: 2vh;
+}
+
+.thumb {
+  height: 30vh;
+  width: 30vh;
+}
+
+a {
+  text-decoration: none;
+  color: var(--indigoo);
+  font-weight: 600;
+}
+
+a:hover {
+  color: var(--indigo-dark);
+}
+
+a:visited {
+  color: var(--indigo-light);
 }
