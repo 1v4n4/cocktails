@@ -6,10 +6,9 @@ import CategoryList from '../containers/CategoryList';
 function App() {
   return (
     <div className="App">
-      <p>Hey</p>
       <SearchList />
-      <LetterList />
       <CategoryList />
+      <LetterList />
     </div>
   );
 }

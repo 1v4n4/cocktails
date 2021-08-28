@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import Prev from '../components/CocktailPreview';
 import CatFilter from '../components/CatFilter';
 import { getCatList } from '../actions';
 
@@ -29,19 +29,13 @@ const CategoryList = () => {
     }
     if (list.data && list.data.length > 0) {
       return (
-        <div>
-          {list.data.map((item) => (
-            <Link to={`/cocktail/${item.strDrink}`} key={item.idDrink}>{item.strDrink}</Link>
-          ))}
-
-        </div>
-
+        <Prev list={list.data} />
       );
     }
     if (list.errorMSG !== '') {
       return <p className="show-data-msg">{list.errorMSG}</p>;
     }
-    return <p className="show-data-msg">Yikes! No data</p>;
+    return <p />;
   };
 
   return (

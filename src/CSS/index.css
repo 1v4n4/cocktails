@@ -2,7 +2,6 @@
   --kind-a-orange: #ffco9f;
   --kind-a-yellow: #ffee93;
   --pinkish: #fcf5c7;
-  --warm-blue: #aoced9;
   --warm-green: #adf7b6;
   --white-two: #fafafa;
   --pale-grey: #f5f6fa;
@@ -35,24 +34,8 @@ button {
   background: none;
   border: none;
   color: var(--indigoo);
-  font-family: 'Prompt', sans-serif;
-}
-
-
-.prev-container {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  margin: auto;
-}
-
-.prev-cart {
-margin: 2vh;
-}
-
-.thumb {
-  height: 30vh;
-  width: 30vh;
+  font-family: 'Mukta', sans-serif;
+  font-weight: 600;
 }
 
 a {
@@ -67,4 +50,8 @@ a:hover {
 
 a:visited {
   color: var(--indigo-light);
+}
+
+hr {
+  margin: 5vh 0;
 }

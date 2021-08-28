@@ -1,7 +1,11 @@
 .App {
   text-align: center;
   background: var(--pinkish);
-  padding: 10vh;
+  padding: 0 10vh;
   margin-top: 15vh;
 }
 
+.filter-logo {
+  height: 13vh;
+  margin-left: 0;
+}

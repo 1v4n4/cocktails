@@ -1,0 +1,9 @@
+.search-div{
+  display: flex;
+  justify-content: space-between;
+}
+
+.img1 {
+  width: 25%;
+  margin: 5vh 0 2vh 0;
+}

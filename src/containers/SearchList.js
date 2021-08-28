@@ -1,11 +1,22 @@
-import React from 'react';
-import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import React, { useState } from 'react';
+import { useSelector, useDispatch } from 'react-redux';
+import Prev from '../components/CocktailPreview';
 import Search from '../components/Search';
+import { getSearch } from '../actions';
+import searchs from '../assets/search.png';
+import img1 from '../assets/img1.jpg';
+import '../CSS/searchList.css';
 
 const SearchList = () => {
   const list = useSelector((state) => state.searched);
-  console.log('list component, list:', list);
+  console.log('search component, list:', list);
+
+  const [search, setSearch] = useState('');
+  const dispatch = useDispatch();
+
+  const fetchSearch = () => {
+    dispatch(getSearch(search));
+  };
 
   const showData = () => {
     if (list.loading) {
@@ -18,27 +29,28 @@ const SearchList = () => {
     if (list.data && list.data.length > 0) {
       return (
         <div>
-          {list.data.map((item) => (
-            <Link to={`/cocktail/${item.strDrink}`} key={item.idDrink}>{item.strDrink}</Link>
-          ))}
-
+          <hr />
+          <img src={searchs} className="filter-logo" alt="filter-logo" />
+          <Prev list={list.data} />
+          <hr />
         </div>
-
       );
     }
 
     if (list.errorMSG !== '') {
       return <p className="show-data-msg">{list.errorMSG}</p>;
     }
-    return <p className="show-data-msg">Yikes! No data</p>;
+    return <p />;
   };
 
   return (
-    <div>
-      <h1>List</h1>
-      <Search />
-      <p>{showData()}</p>
-    </div>
+    <>
+      <div className="search-div">
+        <Search setSearch={setSearch} fetchSearch={fetchSearch} />
+        <img src={img1} className="img1" alt="cocktail" />
+      </div>
+      {showData()}
+    </>
   );
 };
 

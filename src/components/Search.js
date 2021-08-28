@@ -1,19 +1,20 @@
-import React, { useState } from 'react';
-import { useDispatch } from 'react-redux';
-import { getSearch } from '../actions';
+import React from 'react';
+import PropTypes from 'prop-types';
+// import { useDispatch } from 'react-redux';
+// import { getSearch } from '../actions';
+import '../CSS/search.css';
 
-const Search = () => {
-  const [search, setSearch] = useState('');
-  const dispatch = useDispatch();
+const Search = ({ setSearch, fetchSearch }) => (
+  <form className="search-form">
+    <h2 className="search-txt">There are hundreds of recipes! Browse cocktails by name or ingredients</h2>
+    <input type="text" placeholder="Type here" onChange={(e) => setSearch(e.target.value)} />
+    <br />
+    <button className="search-btn" type="button" onClick={() => fetchSearch()}>SEARCH</button>
+  </form>
+);
 
-  return (
-    <form className="searchForm">
-      <h4>Search by name or ingredients</h4>
-      <input type="text" placeholder="Type here" onChange={(e) => setSearch(e.target.value)} />
-      <p>{search}</p>
-      <button type="button" onClick={() => dispatch(getSearch(search))}>Search</button>
-    </form>
-  );
+Search.propTypes = {
+  setSearch: PropTypes.func.isRequired,
+  fetchSearch: PropTypes.func.isRequired,
 };
-
 export default Search;

@@ -1,0 +1,15 @@
+.prev-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+.prev-cart {
+margin: 2vh;
+}
+
+.thumb {
+  height: 30vh;
+  width: 30vh;
+}

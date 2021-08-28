@@ -2,7 +2,7 @@ import { CAT_LOADING, CAT_FAIL, CAT_SUCCESS } from '../actions';
 
 const initialState = {
   loading: false,
-  data: [],
+  data: null,
   errorMSG: '',
 };
 

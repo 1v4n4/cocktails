@@ -1,9 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 import LetterFilter from '../components/LetterFilter';
 import { getLetterList } from '../actions';
 import '../CSS/letterList.css';
+import Prev from '../components/CocktailPreview';
+import letters from '../assets/letters.png';
 
 const LetterList = () => {
   const list = useSelector((state) => state.cocktails);
@@ -18,39 +20,41 @@ const LetterList = () => {
     dispatch(getLetterList(letter));
   };
 
+  const isFirstRun = useRef(true);
+
   useEffect(() => {
+    if (isFirstRun.current) {
+      console.log('true');
+      isFirstRun.current = false;
+      return;
+    }
     fetchData(letter);
   }, [letter]);
 
   const showData = () => {
     if (list.loading) {
-      return <p className="show-data-msg">Loading...</p>;
+      return <p className="loading-msg">Loading...</p>;
     }
 
     if (list.data && list.data.length === 0) {
       return <p className="nodrinks-msg">No drinks found</p>;
     }
     if (list.data && list.data.length > 0) {
+      console.log('here');
       return (
-        <div className="prev-container">
-          {list.data.map((item) => (
-            <div className="prev-cart" key={item.idDrink}>
-
-              <Link to={`/cocktail/${item.strDrink}`} className="prev-link"><h3>{item.strDrink}</h3></Link>
-              <img className="thumb" src={item.strDrinkThumb} alt="cocktail-img" />
-
-            </div>
-          ))}
-
+        <div>
+          <hr />
+          <img src={letters} className="filter-logo" alt="filter-logo" />
+          <Prev list={list.data} />
+          <hr />
         </div>
-
       );
     }
 
     if (list.errorMSG !== '') {
       return <p className="show-data-msg">{list.errorMSG}</p>;
     }
-    return <p className="show-data-msg">Yikes! No data</p>;
+    return <p />;
   };
 
   return (

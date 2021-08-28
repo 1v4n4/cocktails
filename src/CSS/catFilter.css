@@ -1,0 +1,18 @@
+.cat-filter-div {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 0;
+
+}
+
+.cat-button {
+  font-size: 2.8vh;
+  background: var(--pinkk);
+  margin: 1vh 0.18vh;
+  padding: 0.5vh 1.7vh;
+}
+
+.cat-button:hover {
+  color: var(--indigo-dark);
+}

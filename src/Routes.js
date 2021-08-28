@@ -5,6 +5,8 @@ import Header from './components/Header';
 import App from './components/App';
 import Cocktail from './components/Cocktail';
 import MakeDrink from './containers/MakeDrink';
+import Alcoholic from './containers/Alcoholic';
+import NonAlcoholic from './containers/NonAlcoholic';
 
 const Routes = () => (
 
@@ -14,6 +16,8 @@ const Routes = () => (
       <Route exact path="/" component={App} />
       <Route path="/cocktail/:cocktail" component={Cocktail} />
       <Route path="/make-drink" component={MakeDrink} />
+      <Route path="/alcoholic" component={Alcoholic} />
+      <Route path="/non-alcoholic" component={NonAlcoholic} />
     </Switch>
     <Footer />
   </BrowserRouter>

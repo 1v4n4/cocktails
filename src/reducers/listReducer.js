@@ -2,7 +2,7 @@ import { LIST_LOADING, LIST_FAIL, LIST_SUCCESS } from '../actions';
 
 const initialState = {
   loading: false,
-  data: [],
+  data: null,
   errorMSG: '',
 };
 

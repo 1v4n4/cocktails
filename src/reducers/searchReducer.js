@@ -2,7 +2,7 @@ import { SEARCH_LOADING, SEARCH_FAIL, SEARCH_SUCCESS } from '../actions';
 
 const initialState = {
   loading: false,
-  data: [],
+  data: null,
   errorMSG: '',
 };
 
