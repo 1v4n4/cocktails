@@ -1,0 +1,16 @@
+header {
+  background: var(--pinkk);
+  height: 16vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  padding: 1vh 10vh;
+  box-sizing: border-box;
+}
+
+.logo {
+  height: 14vh;
+
+}

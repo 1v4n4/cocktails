@@ -21,7 +21,7 @@ const CategoryList = () => {
 
   const showData = () => {
     if (list.loading) {
-      return <p className="show-data-msg">Loading...</p>;
+      return <p className="loading-msg">Loading...</p>;
     }
 
     if (list.data && list.data.length === 0) {

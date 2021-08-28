@@ -1,4 +1,7 @@
 .App {
   text-align: center;
+  background: var(--pinkish);
+  padding: 10vh;
+  margin-top: 15vh;
 }
 

@@ -31,9 +31,14 @@ const LetterList = () => {
     }
     if (list.data && list.data.length > 0) {
       return (
-        <div>
+        <div className="prev-container">
           {list.data.map((item) => (
-            <Link to={`/cocktail/${item.strDrink}`} key={item.idDrink}>{item.strDrink}</Link>
+            <div className="prev-cart" key={item.idDrink}>
+
+              <Link to={`/cocktail/${item.strDrink}`} className="prev-link"><h3>{item.strDrink}</h3></Link>
+              <img className="thumb" src={item.strDrinkThumb} alt="cocktail-img" />
+
+            </div>
           ))}
 
         </div>
