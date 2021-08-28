@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../CSS/header.css';
+/* eslint-disable */
 import logo1 from '../assets/logo1.png';
 
 const Header = () => (
@@ -12,7 +13,7 @@ const Header = () => (
     </div>
     {' '}
     <div className="right-div">
-      <h1>All cocktails you</h1>
+      <h1>All the cocktails you've</h1>
       <h1> ever wanted to try</h1>
 
     </div>

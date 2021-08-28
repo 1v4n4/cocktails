@@ -3,6 +3,19 @@ footer {
   justify-content: space-between;
   padding: 0 10vh;
   background: var(--pinkk);
-  height: 8vh;
+  height: 7vh;
   width: 100%;
+}
+
+.social {
+  margin-top: 2vh;
+}
+
+.social-icon {
+  margin: 0 2vh;
+}
+
+.social-icon:hover {
+  border: 5px solid #fcf5c7;
+  border-radius: 50%;
 }
