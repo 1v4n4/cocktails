@@ -23,6 +23,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--indigoo);
   box-sizing: border-box;
+  background: var(--pinkish)
 }
 
 code {

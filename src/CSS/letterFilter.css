@@ -12,3 +12,11 @@
   margin: 1vh 0.18vh;
   padding: 0.5vh 2.9vh;
 }
+
+.letter-btn-selected {
+  font-size: 2.8vh;
+  background: var(--pinkish);
+  margin: 1vh 0.18vh;
+  padding: 0.5vh 2.9vh;
+  border: 1px solid #f5756b;
+}

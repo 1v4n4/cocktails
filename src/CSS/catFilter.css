@@ -6,11 +6,19 @@
 
 }
 
-.cat-button {
+.cat-btn {
   font-size: 2.8vh;
   background: var(--pinkk);
   margin: 1vh 0.18vh;
   padding: 0.5vh 1.7vh;
+}
+
+.cat-btn-selected {
+  font-size: 2.8vh;
+  background: var(--pinkish);
+  margin: 1vh 0.18vh;
+  padding: 0.5vh 1.7vh;
+  border: 1px solid #f5756b;
 }
 
 .cat-button:hover {

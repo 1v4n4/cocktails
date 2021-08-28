@@ -47,7 +47,7 @@ const CategoryList = () => {
   return (
     <div>
 
-      <CatFilter setCategory={setCategory} />
+      <CatFilter setCategory={setCategory} category={category} />
       {showData()}
     </div>
   );
