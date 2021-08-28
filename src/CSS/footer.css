@@ -1,6 +1,8 @@
 footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10vh;
   background: var(--pinkk);
   height: 8vh;
   width: 100%;
-
 }
