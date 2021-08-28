@@ -59,7 +59,6 @@ const LetterList = () => {
 
   return (
     <div>
-      <h1>List</h1>
       <LetterFilter setLetter={setLetter} />
       <p>{showData()}</p>
     </div>
