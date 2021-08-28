@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import Prev from '../components/CocktailPreview';
 import CatFilter from '../components/CatFilter';
 import { getCatList } from '../actions';
+import cat from '../assets/category.png';
 
 const CategoryList = () => {
   const [category, setCategory] = useState('');
@@ -29,7 +30,12 @@ const CategoryList = () => {
     }
     if (list.data && list.data.length > 0) {
       return (
-        <Prev list={list.data} />
+        <div>
+          <hr />
+          <img src={cat} className="filter-logo" alt="filter-logo" />
+          <Prev list={list.data} />
+          <hr />
+        </div>
       );
     }
     if (list.errorMSG !== '') {
