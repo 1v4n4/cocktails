@@ -56,3 +56,13 @@ a:visited {
 hr {
   margin: 5vh 0;
 }
+
+.coctail-name {
+  text-align: center;
+  font-size: 10vh;
+  text-decoration: underline;
+}
+
+.container {
+  margin: 25vh 10vh 5vh 10vh;
+}
