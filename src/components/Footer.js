@@ -20,7 +20,7 @@ const Footer = () => (
         <SocialIcon
           network="twitter"
           bgColor="#fcf5c7"
-          style={{ height: 35, width: 35 }}
+          style={{ height: 30, width: 30 }}
           className="social-icon"
         />
       </TwitterShareButton>
@@ -34,7 +34,7 @@ const Footer = () => (
         <SocialIcon
           network="facebook"
           bgColor="#fcf5c7"
-          style={{ height: 35, width: 35 }}
+          style={{ height: 30, width: 30 }}
           className="social-icon"
         />
       </FacebookShareButton>
@@ -47,7 +47,7 @@ const Footer = () => (
         <SocialIcon
           network="linkedin"
           bgColor="#fcf5c7"
-          style={{ height: 35, width: 35 }}
+          style={{ height: 30, width: 30 }}
           className="social-icon"
         />
       </LinkedinShareButton>
@@ -61,7 +61,7 @@ const Footer = () => (
         <SocialIcon
           network="whatsapp"
           bgColor="#fcf5c7"
-          style={{ height: 35, width: 35 }}
+          style={{ height: 30, width: 30 }}
           className="social-icon"
         />
       </WhatsappShareButton>
@@ -69,7 +69,7 @@ const Footer = () => (
     <div className="credits">
       <p className="credits-p">
         Made by
-        <a className="git-link" href="github.com/1v4n4">1v4n4</a>
+        <a className="git-link" href="github.com/1v4n4"> 1v4n4</a>
         {' '}
         © 2021
       </p>

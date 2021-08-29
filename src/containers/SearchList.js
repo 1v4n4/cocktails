@@ -20,11 +20,11 @@ const SearchList = () => {
 
   const showData = () => {
     if (list.loading) {
-      return <p className="show-data-msg">Loading...</p>;
+      return <h1>Loading...</h1>;
     }
 
     if (list.data && list.data.length === 0) {
-      return <p className="nodrinks-msg">No drinks found</p>;
+      return <h1>No drinks found</h1>;
     }
     if (list.data && list.data.length > 0) {
       return (
@@ -38,7 +38,7 @@ const SearchList = () => {
     }
 
     if (list.errorMSG !== '') {
-      return <p className="show-data-msg">{list.errorMSG}</p>;
+      return <h1>{list.errorMSG}</h1>;
     }
     return <p />;
   };

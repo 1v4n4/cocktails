@@ -18,11 +18,11 @@ const MakeDrink = () => {
 
   const showData = () => {
     if (list.loading) {
-      return <p className="loading-msg">Loading...</p>;
+      return <h1>Loading...</h1>;
     }
 
     if (list && list.length === 0) {
-      return <p className="nodrinks-msg">Yikes! Something went wrong</p>;
+      return <h1>Yikes! Something went wrong</h1>;
     }
     if (list && list.length > 0) {
       return (
@@ -36,9 +36,9 @@ const MakeDrink = () => {
       );
     }
     if (list.errorMSG !== '') {
-      return <p className="show-data-msg">{list.errorMSG}</p>;
+      return <h1>{list.errorMSG}</h1>;
     }
-    return <p className="show-data-msg">Yikes! No data</p>;
+    return <p />;
   };
 
   console.log('ing list', list, listObjects);

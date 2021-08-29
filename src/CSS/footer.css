@@ -3,27 +3,22 @@ footer {
   justify-content: space-between;
   padding: 0 10vh;
   background: var(--pinkk);
-  height: 7vh;
+  height: 5vh;
   width: 100%;
   box-sizing: border-box;
-}
-
-.social {
-  margin-top: 2vh;
+  position: fixed;
+  bottom: 0;
 }
 
 .social-icon {
-  margin: 0 2vh;
+  margin: 0.5vh 1.5vh 0 1.5vh;
 }
 
 .social-icon:hover {
-  border: 5px solid #fcf5c7;
+  border: 3px solid #fcf5c7;
   border-radius: 50%;
 }
 
-.credits {
-padding-top: 1.5vh;
-}
 .credits-p {
   color: var(--pinkish);
   text-align: left;

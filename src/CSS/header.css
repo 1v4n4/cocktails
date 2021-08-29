@@ -1,12 +1,12 @@
 header {
   background: var(--pinkk);
-  height: 16vh;
+  height: 14vh;
   width: 100%;
   position: fixed;
   top: 0;
   display: flex;
   justify-content: space-between;
-  padding: 1vh 10vh;
+  padding: 0 10vh;
   box-sizing: border-box;
 }
 

@@ -1,13 +1,13 @@
 .cocktail-div {
   display: flex;
-  margin: 21vh 10vh 5vh 10vh;
-  justify-content: space-between;
+  margin: 20vh 10vh 6vh 10vh;
+  justify-content: space-around;
   box-sizing: border-box;
   gap: 10vh;
 }
 
 .cocktail-img {
-  height: 64vh;
+  height: 69vh;
 }
 
 .title-div {
