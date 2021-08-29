@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getCocktail } from '../actions/cocktailActions';
+import '../CSS/cocktail.css';
 
 const Cocktail = (props) => {
   // eslint-disable-next-line
@@ -36,36 +37,57 @@ const Cocktail = (props) => {
   console.log('mes', measures);
 
   return (
-    <div>
-      <h1>{name}</h1>
-      <h3>
-        Category:
-        {cocktail.strCategory}
-      </h3>
-      <h3>
-        Alcoholic:
-        {cocktail.strAlcoholic === 'Alcoholic' ? 'Yes' : 'No'}
-      </h3>
-      <h3>
-        Serve:
-        {cocktail.strGlass}
-      </h3>
-      <img src={cocktail.strDrinkThumb} alt="cocktail-img" />
-      <h3>Ingredients</h3>
-      <ul>
-        {ingredients.map((item, index) => (
-          <li key={item}>
-            {item}
+    <div className="cocktail-div">
+      <div className="data-div">
+
+        <h1 className="coctail-name">{name}</h1>
+        <div className="title-div">
+          <h3 className="coc-description">
+            Category
             {' '}
-            -
-            {' '}
-            {measures[index]}
-          </li>
-        ))}
-      </ul>
-      <h3>Instructions</h3>
-      <p>{cocktail.strInstructions}</p>
-      { cocktail.strVideo && <a href={cocktail.strVideo} target="_blank" rel="noreferrer">Watch on Youtube</a>}
+            <p className="coc-description-txt">
+              {cocktail.strCategory}
+            </p>
+          </h3>
+          <h3 className="coc-description">
+            Alcoholic
+            <p className="coc-description-txt">
+              {cocktail.strAlcoholic === 'Alcoholic' ? 'Yes' : 'No'}
+            </p>
+          </h3>
+          <h3 className="coc-description">
+            Serve
+            <p className="coc-description-txt">
+              {cocktail.strGlass}
+            </p>
+          </h3>
+        </div>
+        <div className="flex-div">
+          <div className="ing-div">
+            <h3 className="coc-description">Ingredients</h3>
+            <ul>
+              {ingredients.map((item, index) => (
+                <li key={item} className="coc=txt">
+                  {item}
+                  {' '}
+                  -
+                  {' '}
+                  {measures[index]}
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="instructions-div">
+            <h3 className="coc-description">Instructions</h3>
+            <p className="coc-txt">{cocktail.strInstructions}</p>
+            { cocktail.strVideo && <p className="yt-link"><a href={cocktail.strVideo} target="_blank" rel="noreferrer">Watch on Youtube</a></p>}
+          </div>
+        </div>
+      </div>
+      <div className="cocktail-img-div">
+        <img className="cocktail-img" src={cocktail.strDrinkThumb} alt="cocktail-img" />
+      </div>
+
     </div>
   );
 };

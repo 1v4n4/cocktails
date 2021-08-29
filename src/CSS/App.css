@@ -3,6 +3,7 @@
   background: var(--pinkish);
   padding: 0 10vh;
   margin-top: 15vh;
+  box-sizing: border-box;
 }
 
 .filter-logo {
