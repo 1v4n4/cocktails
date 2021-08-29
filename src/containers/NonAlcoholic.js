@@ -14,7 +14,6 @@ const NonAlcoholic = () => {
   }, []);
 
   const list = useSelector((state) => state.nonalcoholic);
-  console.log('lilist', list);
 
   const showData = () => {
     if (list.loading) {

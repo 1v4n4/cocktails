@@ -1,22 +1,18 @@
 import React, { useEffect, useState, useRef } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-// import { Link } from 'react-router-dom';
 import LetterFilter from '../components/LetterFilter';
 import { getLetterList } from '../actions/letterActions';
-// import '../CSS/letterList.css';
 import Prev from '../components/CocktailPreview';
 import letters from '../assets/letters.png';
 
 const LetterList = () => {
   const list = useSelector((state) => state.cocktails);
-  console.log('list component, list:', list);
 
   const [letter, setLetter] = useState('');
 
   const dispatch = useDispatch();
 
   const fetchData = (letter) => {
-    console.log('in fetchdata');
     dispatch(getLetterList(letter));
   };
 
@@ -24,7 +20,6 @@ const LetterList = () => {
 
   useEffect(() => {
     if (isFirstRun.current) {
-      console.log('true');
       isFirstRun.current = false;
       return;
     }
@@ -40,7 +35,6 @@ const LetterList = () => {
       return <h1>No drinks found</h1>;
     }
     if (list.data && list.data.length > 0) {
-      console.log('here');
       return (
         <div>
           <hr />

@@ -9,7 +9,6 @@ import '../CSS/searchList.css';
 
 const SearchList = () => {
   const list = useSelector((state) => state.searched);
-  console.log('search component, list:', list);
 
   const [search, setSearch] = useState('');
   const dispatch = useDispatch();

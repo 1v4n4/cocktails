@@ -10,7 +10,6 @@ const getIng = () => async (dispatch) => {
       type: ING_LOADING,
     });
     const result = await axios.get('https://www.thecocktaildb.com/api/json/v1/1/list.php?i=list');
-    console.log('result from ing', result.data.drinks);
     dispatch({
       type: ING_SUCCESS,
       payload: result.data.drinks,

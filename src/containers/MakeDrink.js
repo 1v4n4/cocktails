@@ -41,7 +41,6 @@ const MakeDrink = () => {
     return <p />;
   };
 
-  console.log('ing list', list, listObjects);
   return (
     <div>
       <p>MakeDrink</p>

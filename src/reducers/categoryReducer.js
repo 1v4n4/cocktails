@@ -7,7 +7,6 @@ const initialState = {
 };
 
 const catReducer = (state = initialState, action) => {
-  console.log('in category reducer');
   switch (action.type) {
     case CAT_LOADING:
       return { ...state, loading: true, errorMSG: '' };

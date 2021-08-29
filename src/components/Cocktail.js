@@ -12,16 +12,12 @@ const Cocktail = (props) => {
   const dispatch = useDispatch();
 
   const fetchCocktail = (name) => {
-    console.log('in fetchCocktail');
     dispatch(getCocktail(name));
   };
 
   useEffect(() => {
     fetchCocktail(name);
   }, [name]);
-
-  console.log('koktell', cocktail);
-  console.log('x', Object.values(cocktail)[0]);
 
   const ingredients = Object.keys(cocktail)
     .filter((key) => key.match(/ingredient/i))
@@ -32,9 +28,6 @@ const Cocktail = (props) => {
     .filter((key) => key.match(/strMeasure/i))
     .filter((key) => !!cocktail[key] || cocktail[key] === ' ')
     .map((key) => cocktail[key].trim());
-
-  console.log('ing', ingredients);
-  console.log('mes', measures);
 
   return (
     <div className="cocktail-div">

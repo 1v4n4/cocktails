@@ -7,7 +7,6 @@ const initialState = {
 };
 
 const cocktailReducer = (state = initialState, action) => {
-  console.log('in cock reducer');
   switch (action.type) {
     case COCKTAIL_LOADING:
       return { ...state, loading: true, errorMSG: '' };

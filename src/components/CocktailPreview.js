@@ -5,7 +5,7 @@ import '../CSS/cocktailPreview.css';
 
 const Prev = (props) => {
   const { list } = props;
-  console.log('pr', list);
+
   return (
 
     <div className="prev-container">

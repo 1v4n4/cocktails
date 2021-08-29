@@ -8,11 +8,10 @@ import cat from '../assets/category.png';
 const CategoryList = () => {
   const [category, setCategory] = useState('');
   const list = useSelector((state) => state.category);
-  console.log('category component, list:', list);
+
   const dispatch = useDispatch();
 
   const fetchCategory = (category) => {
-    console.log('in fetchCategory', category);
     dispatch(getCatList(category));
   };
 
