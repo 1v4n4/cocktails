@@ -1,5 +1,4 @@
 :root {
-  --kind-a-orange: #ffco9f;
   --kind-a-yellow: #ffee93;
   --pinkish: #fcf5c7;
   --warm-green: #adf7b6;
@@ -10,11 +9,14 @@
   --indigo-dark: #000814;
   --indigo-light: #6c8aa7;
 }
+
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@600&display=swap');
+
 /* font-family: 'Prompt', sans-serif; */
 @import url('https://fonts.googleapis.com/css2?family=Mukta&display=swap');
-/*font-family: 'Mukta', sans-serif;*/
+
+/* font-family: 'Mukta', sans-serif; */
 
 body {
   margin: 0;
@@ -23,11 +25,16 @@ body {
   -moz-osx-font-smoothing: grayscale;
   color: var(--indigoo);
   box-sizing: border-box;
-  background: var(--pinkish)
+  background: var(--pinkish);
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family:
+    source-code-pro,
+    Menlo,
+    Monaco,
+    Consolas,
+    'Courier New',
     monospace;
 }
 

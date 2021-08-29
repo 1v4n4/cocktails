@@ -2,8 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 0 0;
-
+  margin-bottom: 10vh;
 }
 
 .letter-btn {

@@ -69,7 +69,7 @@ const Footer = () => (
     <div className="credits">
       <p className="credits-p">
         Made by
-        <a className="git-link" href="github.com/1v4n4"> 1v4n4</a>
+        <a className="git-link" href="https://www.github.com/1v4n4" target="_blank" rel="noreferrer"> 1v4n4</a>
         {' '}
         © 2021
       </p>

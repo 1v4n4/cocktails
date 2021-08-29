@@ -22,7 +22,19 @@ footer {
 .credits-p {
   color: var(--pinkish);
   text-align: left;
+  margin-top: -0.01vh;
+  padding-top: 1vh;
 }
+
 .git-link {
   color: var(--pinkish);
+}
+
+.git-link:visited {
+  color: var(--pinkish);
+}
+
+.git-link:hover {
+  color: var(--pinkish);
+  font-size: 2.5vh;
 }

@@ -11,9 +11,9 @@
 }
 
 .title-div {
-display: flex;
-justify-content: center;
-gap: 10vh;
+  display: flex;
+  justify-content: center;
+  gap: 10vh;
 }
 
 .coc-description {
@@ -32,15 +32,13 @@ ul {
   font-size: 2.3vh;
 }
 
-
 .coc-txt {
- font-size: 2.3vh;
- text-align: center;
+  font-size: 2.3vh;
+  text-align: center;
 }
 
 .yt-link {
   text-align: center;
-
 }
 
 .flex-div {

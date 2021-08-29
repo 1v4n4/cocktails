@@ -1,10 +1,13 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import PropTypes from 'prop-types';
 import { getIng } from '../actions/ingredientsActions';
+import '../CSS/selectIng.css';
 
-const MakeDrink = () => {
+const IngList = ({ ingredient, setIngredient }) => {
   const dispatch = useDispatch();
   const listObjects = useSelector((state) => state.ingredients.data);
+  const loading = useSelector((state) => state.ingredients.loading);
 
   const list = listObjects.map((item) => item.strIngredient1);
 
@@ -17,18 +20,15 @@ const MakeDrink = () => {
   }, []);
 
   const showData = () => {
-    if (list.loading) {
-      return <h1>Loading...</h1>;
+    if (loading) {
+      return <h1 style={{ marginTop: '25vh' }}>Loading</h1>;
     }
 
-    if (list && list.length === 0) {
-      return <h1>Yikes! Something went wrong</h1>;
-    }
     if (list && list.length > 0) {
       return (
-        <div>
+        <div className="ing-btn-div">
           {list.map((item) => (
-            <button type="button" key={item}>{item}</button>
+            <button className={`ing-btn${ingredient === item ? '-selected' : ''}`} type="button" key={item} onClick={() => setIngredient(item)}>{item}</button>
           ))}
 
         </div>
@@ -43,13 +43,16 @@ const MakeDrink = () => {
 
   return (
     <div>
-      <p>MakeDrink</p>
-      <p>
-        oj
-        {showData()}
-      </p>
+
+      {showData()}
+
     </div>
   );
 };
 
-export default MakeDrink;
+IngList.propTypes = {
+  setIngredient: PropTypes.func.isRequired,
+  ingredient: PropTypes.string.isRequired,
+};
+
+export default IngList;
