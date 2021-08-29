@@ -66,7 +66,14 @@ const Footer = () => (
         />
       </WhatsappShareButton>
     </div>
-    <div className="credits" />
+    <div className="credits">
+      <p className="credits-p">
+        Made by
+        <a className="git-link" href="github.com/1v4n4">1v4n4</a>
+        {' '}
+        © 2021
+      </p>
+    </div>
   </footer>
 );
 export default Footer;

@@ -5,6 +5,7 @@ footer {
   background: var(--pinkk);
   height: 7vh;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .social {
@@ -18,4 +19,15 @@ footer {
 .social-icon:hover {
   border: 5px solid #fcf5c7;
   border-radius: 50%;
+}
+
+.credits {
+padding-top: 1.5vh;
+}
+.credits-p {
+  color: var(--pinkish);
+  text-align: left;
+}
+.git-link {
+  color: var(--pinkish);
 }

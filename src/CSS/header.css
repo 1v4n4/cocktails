@@ -29,6 +29,7 @@ h1 {
 
 .nav-link {
  font-size: 3vh;
+ color: var(--pinkish);
  background: var(--pinkk);
  margin: 5vh 4vh;
  padding: 0.5vh 3vh;
@@ -36,10 +37,10 @@ h1 {
 }
 
 .nav-link:visited {
-  color: var(--indigo);
+  color: var(--pinkish);
 }
 
 .nav-link:hover {
-  color: var(--indigo-dark);
+  color: var(--indigo);
   background: var(--pinkish);
 }
