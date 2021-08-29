@@ -3,7 +3,7 @@ import { useDispatch, useSelector } from 'react-redux';
 // import { Link } from 'react-router-dom';
 import LetterFilter from '../components/LetterFilter';
 import { getLetterList } from '../actions/letterActions';
-import '../CSS/letterList.css';
+// import '../CSS/letterList.css';
 import Prev from '../components/CocktailPreview';
 import letters from '../assets/letters.png';
 
