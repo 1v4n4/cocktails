@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import LetterFilter from '../components/LetterFilter';
 import { getLetterList } from '../actions/letterActions';
@@ -16,13 +16,7 @@ const LetterList = () => {
     dispatch(getLetterList(letter));
   };
 
-  const isFirstRun = useRef(true);
-
   useEffect(() => {
-    if (isFirstRun.current) {
-      isFirstRun.current = false;
-      return;
-    }
     fetchData(letter);
   }, [letter]);
 
