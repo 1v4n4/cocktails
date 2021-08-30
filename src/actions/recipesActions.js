@@ -9,7 +9,7 @@ const getRecipes = (ing) => async (dispatch) => {
     dispatch({
       type: RECIPES_LOADING,
     });
-    const result = await axios.get(`https:www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ing}`);
+    const result = await axios.get(`https://www.thecocktaildb.com/api/json/v1/1/filter.php?i=${ing}`);
     dispatch({
       type: RECIPES_SUCCESS,
       payload: result.data.drinks,

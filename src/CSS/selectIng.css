@@ -1,7 +1,7 @@
 .ing-btn-div {
   display: flex;
   flex-wrap: wrap;
-  margin: 18vh 10vh 5vh 10vh;
+  margin: 18vh 10vh 0 10vh;
 }
 
 .ing-btn {
@@ -21,5 +21,8 @@
 
 .selection {
   margin: 5vh 10vh;
-  text-align: center;
+}
+
+#four {
+  padding-top: 5vh;
 }

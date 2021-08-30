@@ -44,7 +44,7 @@ const CategoryList = () => {
   };
 
   return (
-    <div>
+    <div id="two">
 
       <CatFilter setCategory={setCategory} category={category} />
       {showData()}

@@ -48,7 +48,9 @@ const SearchList = () => {
         <Search setSearch={setSearch} fetchSearch={fetchSearch} />
         <img src={img1} className="img1" alt="cocktail" />
       </div>
-      {showData()}
+      <div id="three">
+        {showData()}
+      </div>
     </>
   );
 };

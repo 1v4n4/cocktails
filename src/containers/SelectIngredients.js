@@ -43,7 +43,9 @@ const SelectIngredients = () => {
   return (
     <div>
       <IngList setIngredient={setIngredient} ingredient={ingredient} />
-      {showData()}
+      <div id="four">
+        {showData()}
+      </div>
     </div>
   );
 };

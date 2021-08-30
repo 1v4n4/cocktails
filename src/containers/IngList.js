@@ -19,6 +19,13 @@ const IngList = ({ ingredient, setIngredient }) => {
     FetchIng();
   }, []);
 
+  const handleClick = (item) => {
+    setIngredient(item);
+    setTimeout(() => {
+      window.location.href = '#four';
+    }, 300);
+  };
+
   const showData = () => {
     if (loading) {
       return <h1 style={{ marginTop: '25vh' }}>Loading</h1>;
@@ -28,7 +35,7 @@ const IngList = ({ ingredient, setIngredient }) => {
       return (
         <div className="ing-btn-div">
           {list.map((item) => (
-            <button className={`ing-btn${ingredient === item ? '-selected' : ''}`} type="button" key={item} onClick={() => setIngredient(item)}>{item}</button>
+            <button className={`ing-btn${ingredient === item ? '-selected' : ''}`} type="button" key={item} onClick={() => handleClick(item)}>{item}</button>
           ))}
 
         </div>
