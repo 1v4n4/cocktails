@@ -64,10 +64,6 @@ a:visited {
   color: var(--indigo-light);
 }
 
-hr {
-  margin: 5vh 0;
-}
-
 .coctail-name {
   text-align: center;
   font-size: 10vh;

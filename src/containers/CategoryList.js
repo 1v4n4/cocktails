@@ -30,10 +30,8 @@ const CategoryList = () => {
     if (list.data && list.data.length > 0) {
       return (
         <div>
-          <hr />
           <img src={cat} className="filter-logo" alt="filter-logo" />
           <Prev list={list.data} />
-          <hr />
         </div>
       );
     }
@@ -44,7 +42,7 @@ const CategoryList = () => {
   };
 
   return (
-    <div id="two">
+    <div>
 
       <CatFilter setCategory={setCategory} category={category} />
       {showData()}

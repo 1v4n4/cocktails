@@ -8,7 +8,7 @@ const LetterFilter = ({ letter, setLetter }) => {
   const handleClick = (e) => {
     setLetter(e.target.value);
     setTimeout(() => {
-      window.location.href = '#one';
+      window.location.href = '#two';
     }, 300);
   };
 

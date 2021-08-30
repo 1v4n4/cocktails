@@ -37,10 +37,8 @@ const LetterList = () => {
     if (list.data && list.data.length > 0) {
       return (
         <div>
-          <hr />
           <img src={letters} className="filter-logo" alt="filter-logo" />
           <Prev list={list.data} />
-          <hr />
         </div>
       );
     }

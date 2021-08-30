@@ -27,11 +27,10 @@ const SearchList = () => {
     }
     if (list.data && list.data.length > 0) {
       return (
-        <div>
+        <div className="search-res-div">
           <hr />
           <img src={searchs} className="filter-logo" alt="filter-logo" />
           <Prev list={list.data} />
-          <hr />
         </div>
       );
     }

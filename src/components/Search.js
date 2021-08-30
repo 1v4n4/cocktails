@@ -8,7 +8,7 @@ const Search = ({ setSearch, fetchSearch }) => {
   const handleClick = () => {
     fetchSearch();
     setTimeout(() => {
-      window.location.href = '#three';
+      window.location.href = '#two';
     }, 300);
   };
 
@@ -23,6 +23,7 @@ const Search = ({ setSearch, fetchSearch }) => {
       <input type="text" placeholder="Type here" onChange={(e) => setSearch(e.target.value)} />
       <br />
       <button className="search-btn" type="button" onClick={() => handleClick()}>SEARCH</button>
+      <div id="two"></div>
     </form>
   );
 };

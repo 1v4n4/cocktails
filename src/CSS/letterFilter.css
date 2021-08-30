@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 10vh;
+  margin: 6vh 0 5vh 0;
 }
 
 .letter-btn {
@@ -18,4 +18,8 @@
   margin: 1vh 0.18vh;
   padding: 0.5vh 2.9vh;
   border: 1px solid #f5756b;
+}
+
+#one {
+  margin-bottom: 10vh;
 }
