@@ -38,22 +38,30 @@ const Cocktail = (props) => {
           <h3 className="coc-description">
             Category
             {' '}
-            <p className="coc-description-txt">
-              {cocktail.strCategory}
-            </p>
+            {' '}
+
           </h3>
+          <br />
+          <p className="coc-description-txt">
+            {cocktail.strCategory}
+          </p>
+
           <h3 className="coc-description">
             Alcoholic
-            <p className="coc-description-txt">
-              {cocktail.strAlcoholic === 'Alcoholic' ? 'Yes' : 'No'}
-            </p>
           </h3>
+          <br />
+          <p className="coc-description-txt">
+            {cocktail.strAlcoholic === 'Alcoholic' ? 'Yes' : 'No'}
+          </p>
+
           <h3 className="coc-description">
             Serve
-            <p className="coc-description-txt">
-              {cocktail.strGlass}
-            </p>
           </h3>
+          <br />
+          <p className="coc-description-txt">
+            {cocktail.strGlass}
+          </p>
+
         </div>
         <div className="flex-div">
           <div className="ing-div">
