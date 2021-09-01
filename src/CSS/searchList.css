@@ -1,5 +1,6 @@
 .img1 {
   width: 60%;
+  object-fit: cover;
 }
 
 .search-res-div {
@@ -19,6 +20,13 @@
 
   .img1 {
     width: 40%;
+    height: auto;
+    margin-top: 2vh;
+  }
+}
+@media (min-width: 768px) {
+  .img1 {
+    width: 25%;
     height: auto;
     margin-top: 2vh;
   }
