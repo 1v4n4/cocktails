@@ -1,0 +1,51 @@
+.prev-container {
+  margin: auto;
+  text-align: center;
+  padding: 0 2vh;
+}
+
+.prev-cart {
+  margin: 2vh;
+}
+
+.thumb {
+  width: 100%;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+@media (min-width: 768px) {
+  .prev-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: auto;
+    text-align: center;
+  }
+
+  .prev-cart {
+    margin: 2vh;
+  }
+
+  .thumb {
+    height: 40vh;
+    width: 35vh;
+  }
+
+  h3 {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .prev-cart {
+    margin: 0;
+  }
+
+  .thumb {
+    height: 30vh;
+    width: 30vh;
+  }
+}

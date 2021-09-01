@@ -1,0 +1,28 @@
+.ing-btn-div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 18vh 10vh 0 10vh;
+}
+
+.ing-btn {
+  font-size: 2.5vh;
+  background: var(--pinkk);
+  margin: 0.2vh 0.1vh;
+  padding: 0 1vh;
+}
+
+.ing-btn-selected {
+  font-size: 2.5vh;
+  background: var(--pinkish);
+  margin: 0.2vh 0.1vh;
+  padding: 0 1vh;
+  border: 1px solid #f5756b;
+}
+
+.selection {
+  margin: 5vh 10vh;
+}
+
+#four {
+  padding-top: 5vh;
+}
