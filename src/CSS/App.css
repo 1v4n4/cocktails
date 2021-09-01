@@ -1,4 +1,24 @@
 .App {
   text-align: center;
+  background: var(--pinkish);
+  padding: 0 2vh;
+  margin-top: 17vh;
+  box-sizing: border-box;
 }
 
+.filter-logo {
+  height: 13vh;
+  margin-left: 0;
+}
+
+@media (min-width: 768px) {
+  .App {
+    margin-top: 15vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .App {
+    padding: 0 10vh;
+  }
+}

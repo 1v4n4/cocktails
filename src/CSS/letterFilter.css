@@ -1,0 +1,26 @@
+.letter-filter-div {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 6vh 0 5vh 0;
+}
+
+.letter-btn {
+  font-size: 2.8vh;
+  background: var(--pinkk);
+  margin: 1vh 0.18vh;
+  padding: 0.5vh 2.9vh;
+}
+
+.letter-btn-selected {
+  font-size: 2.8vh;
+  background: var(--pinkish);
+  margin: 1vh 0.18vh;
+  padding: 0.5vh 2.9vh;
+  border: 1px solid #f5756b;
+}
+
+#one {
+  margin-bottom: 10vh;
+}
