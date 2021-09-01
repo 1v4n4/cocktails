@@ -6,9 +6,11 @@ import logo1 from '../assets/logo1.png';
 const Header = () => (
   <header>
     <Link to="/"><div className="logo-div"><img className="logo" src={logo1} alt="logo" /></div></Link>
-    <div className="left">
+    <div className="right">
       <Link className="nav-link" to="/alcoholic">ALCOHOLIC</Link>
+      <br className="new-line" />
       <Link className="nav-link" to="/non-alcoholic">NON-ALCOHOLIC</Link>
+      <br className="new-line" />
       <Link className="nav-link" to="/ingredients">SELECT BY INGREDIENT</Link>
     </div>
 

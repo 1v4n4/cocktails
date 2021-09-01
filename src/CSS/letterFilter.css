@@ -1,7 +1,8 @@
 .letter-filter-div {
   width: 100%;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   margin: 6vh 0 5vh 0;
 }
 

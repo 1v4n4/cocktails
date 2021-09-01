@@ -1,7 +1,7 @@
 footer {
   display: flex;
   justify-content: space-between;
-  padding: 0 10vh;
+  padding: 0 4vh 0 2vh;
   background: var(--pinkk);
   height: 5vh;
   width: 100%;
@@ -37,4 +37,10 @@ footer {
 .git-link:hover {
   color: var(--pinkish);
   font-size: 2.5vh;
+}
+
+@media (min-width: 1024px) {
+  footer {
+    padding: 0 10vh;
+  }
 }

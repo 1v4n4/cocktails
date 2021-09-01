@@ -90,14 +90,6 @@ const Cocktail = (props) => {
   );
 };
 
-// Cocktail.propTypes = {
-//   match: PropTypes.shape({
-//     params: PropTypes.shape({
-//       cocktail: PropTypes.string.isRequired,
-//     }),
-//   }),
-// };
-
 Cocktail.propTypes = {
   match: PropTypes.instanceOf(Object).isRequired,
 };

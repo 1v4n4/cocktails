@@ -1,11 +1,10 @@
+
 .search-form {
-  margin-top: 20vh;
-  padding-top: 5vh;
-  width: 70%;
+  margin: 20vh 7vh 0 2vh;
 }
 
 .search-txt {
-  margin-bottom: 5vh;
+  font-size: 2vh;
 }
 
 input {
@@ -27,7 +26,7 @@ input:hover {
 }
 
 .search-btn {
-  margin-top: 3vh;
+  margin-top: 1vh;
   font-size: 3vh;
   padding: 0.5vh 3vh;
   border-radius: 1vh;
@@ -35,4 +34,20 @@ input:hover {
 
 .search-btn:hover {
   background: var(--pinkk);
+}
+
+@media (min-width: 768px) {
+  .search-btn {
+    margin-top: 3vh;
+  }
+
+  .search-form {
+    margin-top: 20vh;
+    padding-top: 5vh;
+    width: 70%;
+  }
+
+  .search-txt {
+    margin-bottom: 5vh;
+  }
 }

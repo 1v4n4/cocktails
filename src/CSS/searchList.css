@@ -1,13 +1,25 @@
-.search-div {
-  display: flex;
-  justify-content: space-between;
-}
-
 .img1 {
-  width: 25%;
-  margin-top: 2vh;
+  width: 60%;
 }
 
 .search-res-div {
   padding-top: 5vh;
+}
+
+.search-div {
+  padding: 0 2vh;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .search-div {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .img1 {
+    width: 40%;
+    height: auto;
+    margin-top: 2vh;
+  }
 }

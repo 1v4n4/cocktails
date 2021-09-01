@@ -1,13 +1,16 @@
 .cocktail-div {
-  display: flex;
-  margin: 20vh 10vh 6vh 10vh;
-  justify-content: space-around;
   box-sizing: border-box;
-  gap: 10vh;
+  margin: 22vh 2vh;
+}
+
+.data-div,
+.cocktail-img-div {
+  padding: 0 2vh;
 }
 
 .cocktail-img {
-  height: 69vh;
+  width: 100%;
+  object-fit: cover;
 }
 
 .title-div {
@@ -25,6 +28,7 @@
 .coc-description-txt {
   font-weight: 400;
   font-size: 2.5vh;
+  text-align: center;
 }
 
 ul {
@@ -41,16 +45,56 @@ ul {
   text-align: center;
 }
 
-.flex-div {
-  display: flex;
-  justify-content: center;
-  gap: 10vh;
-}
+@media (min-width: 1024px) {
+  .cocktail-div {
+    display: flex;
+    margin: 20vh 10vh 6vh 10vh;
+    justify-content: space-around;
+    gap: 10vh;
+  }
 
-.ing-div {
-  width: 40%;
-}
+  .data-div,
+  .cocktail-img-div {
+    padding: 0;
+  }
 
-.instructions-div {
-  width: 60%;
+  .cocktail-img {
+    height: 69vh;
+  }
+
+  .title-div {
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+  }
+
+  .coc-description {
+    text-align: center;
+    font-size: 3vh;
+    line-height: 2vh;
+  }
+
+  .coc-description-txt {
+    font-weight: 400;
+    font-size: 2.5vh;
+  }
+
+  ul {
+    text-align: center;
+    font-size: 2.3vh;
+  }
+
+  .flex-div {
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+  }
+
+  .ing-div {
+    width: 40%;
+  }
+
+  .instructions-div {
+    width: 60%;
+  }
 }
