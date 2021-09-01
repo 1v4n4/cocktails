@@ -9,11 +9,11 @@ const Search = ({ setSearch, fetchSearch }) => {
       window.location.href = '#two';
     }, 300);
   };
-
+  /* eslint-disable */
   return (
     <form className="search-form">
-      <h2 className="search-txt">
-        There are hundreds of recipes, all the cocktails you have
+      <h2 className="search-txt"> ha
+        There are hundreds of recipes, all the cocktails you've
         ever wanted to try!
         <br />
         Browse by name or ingredients
