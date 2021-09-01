@@ -22,7 +22,6 @@ body {
   margin: 0;
   font-family: 'Prompt', sans-serif;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
   color: var(--indigoo);
   box-sizing: border-box;
   background: var(--pinkish);
@@ -64,7 +63,7 @@ a:visited {
   color: var(--indigo-light);
 }
 
-.coctail-name {
+.cocktail-name {
   text-align: center;
   font-size: 10vh;
   text-decoration: underline;

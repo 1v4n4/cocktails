@@ -1,10 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import '../CSS/search.css';
-/* eslint-disable */
 
 const Search = ({ setSearch, fetchSearch }) => {
-
   const handleClick = () => {
     fetchSearch();
     setTimeout(() => {
@@ -15,7 +13,7 @@ const Search = ({ setSearch, fetchSearch }) => {
   return (
     <form className="search-form">
       <h2 className="search-txt">
-        There are hundreds of recipes, all the cocktails you've
+        There are hundreds of recipes, all the cocktails you have
         ever wanted to try!
         <br />
         Browse by name or ingredients
@@ -23,7 +21,7 @@ const Search = ({ setSearch, fetchSearch }) => {
       <input type="text" placeholder="Type here" onChange={(e) => setSearch(e.target.value)} />
       <br />
       <button className="search-btn" type="button" onClick={() => handleClick()}>SEARCH</button>
-      <div id="two"></div>
+      <div id="two" />
     </form>
   );
 };

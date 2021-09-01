@@ -38,7 +38,7 @@ const NonAlcoholic = () => {
 
   return (
     <div className="container">
-      <h1 className="coctail-name">Non-alcoholic drinks</h1>
+      <h1 className="cocktail-name">Non-alcoholic drinks</h1>
       {showData()}
     </div>
   );

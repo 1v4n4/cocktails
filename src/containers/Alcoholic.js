@@ -38,7 +38,7 @@ const Alcoholic = () => {
 
   return (
     <div className="container">
-      <h1 className="coctail-name">Alcoholic drinks</h1>
+      <h1 className="cocktail-name">Alcoholic drinks</h1>
       {showData()}
     </div>
   );
