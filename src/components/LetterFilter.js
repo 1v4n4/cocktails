@@ -8,13 +8,13 @@ const LetterFilter = ({ letter, setLetter }) => {
   const handleClick = (e) => {
     setLetter(e.target.value);
     setTimeout(() => {
-      window.location.href = '#two';
+      window.location.href = '#letter';
     }, 300);
   };
 
   return (
 
-    <div className="letter-filter-div">
+    <div id="letter" className="letter-filter-div">
       {alphabet.map((item) => (
         <button type="button" className={`letter-btn${letter === item ? '-selected' : ''}`} key={item} value={item} onClick={(e) => handleClick(e)}>{item.toUpperCase()}</button>))}
     </div>
