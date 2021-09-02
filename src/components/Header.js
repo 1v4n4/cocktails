@@ -10,7 +10,8 @@ const Header = () => (
       <Link className="nav-link" to="/alcoholic">ALCOHOLIC</Link>
       <br className="new-line" />
       <Link className="nav-link" to="/non-alcoholic">NON-ALCOHOLIC</Link>
-      <br className="new-line" />
+      <br className="new-line1" />
+
       <Link className="nav-link" to="/ingredients">SELECT BY INGREDIENT</Link>
     </div>
 

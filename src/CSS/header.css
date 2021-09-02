@@ -1,21 +1,22 @@
 header {
   background: var(--pinkk);
-  height: 17vh;
+  height: 21vh;
   width: 100%;
   position: fixed;
   top: 0;
   display: flex;
   justify-content: space-between;
-  padding: 0 2vh;
+  padding: 0 1vh;
   box-sizing: border-box;
 }
 
 .logo {
-  height: 15vh;
+  height: 12vh;
+  margin-top: 4vh;
 }
 
 .logo:hover {
-  height: 17vh;
+  height: 14vh;
 }
 
 .right {
@@ -25,10 +26,11 @@ header {
 }
 
 .nav-link {
-  font-size: 3vh;
+  font-size: 2.6vh;
   color: var(--pinkish);
   background: var(--pinkk);
-  padding: 0.5vh 3vh;
+  padding: 0.5vh 2vh;
+  margin-top: 2vh;
   border-radius: 1vh;
 }
 
@@ -41,8 +43,19 @@ header {
   background: var(--pinkish);
 }
 
+.new-line {
+  margin: 0.7vh 0;
+  color: var(--pinkk);
+}
+
+.new-line1 {
+  margin: 2vh 0;
+  color: var(--pinkk);
+}
+
 @media (min-width: 768px) {
-  .new-line {
+  .new-line,
+  .new-line1 {
     display: none;
   }
 
@@ -53,6 +66,7 @@ header {
 
   .logo {
     height: 14vh;
+    margin-top: 0;
   }
 
   .logo:hover {
