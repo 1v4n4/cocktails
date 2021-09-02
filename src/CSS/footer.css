@@ -4,8 +4,6 @@ footer {
   height: 12vh;
   width: 100%;
   box-sizing: border-box;
-  position: fixed;
-  bottom: 0;
   text-align: center;
 }
 
@@ -53,6 +51,8 @@ footer {
 
 @media (min-width: 1024px) {
   footer {
+    position: fixed;
+    bottom: 0;
     height: 7vh;
     padding: 1vh 10vh;
   }

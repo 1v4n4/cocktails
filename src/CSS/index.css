@@ -61,25 +61,25 @@ a:visited {
 
 .cocktail-name {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   text-decoration: underline;
+  margin-bottom: 3vh;
+  font-family: 'Mukta', sans-serif;
+  font-style: italic;
 }
 
 .container {
   margin: 25vh 10vh 5vh 10vh;
 }
 
-h1 {
-  margin-top: 3vh;
-  font-family: 'Mukta', sans-serif;
-  font-size: 4vh;
-  line-height: 2vh;
-  font-style: italic;
-}
-
 @media (min-width: 768px) {
   .cocktail-name {
     font-size: 3rem;
+    margin: 0;
+  }
+
+  .container {
+    margin: 16vh 10vh 5vh 10vh;
   }
 }
 

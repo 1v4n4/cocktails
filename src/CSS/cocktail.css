@@ -1,6 +1,6 @@
 .cocktail-div {
   box-sizing: border-box;
-  margin: 22vh 2vh;
+  margin: 21vh 0 2vh 0;
 }
 
 .data-div,
@@ -11,12 +11,6 @@
 .cocktail-img {
   width: 100%;
   object-fit: cover;
-}
-
-.title-div {
-  display: flex;
-  justify-content: center;
-  gap: 10vh;
 }
 
 .coc-description {
@@ -34,6 +28,7 @@
 ul {
   text-align: center;
   font-size: 2.3vh;
+  list-style-type: none;
 }
 
 .coc-txt {
@@ -43,6 +38,18 @@ ul {
 
 .yt-link {
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .cocktail-div {
+    margin: 15vh 10vh 6vh 10vh;
+  }
+
+  .title-div {
+    display: flex;
+    justify-content: center;
+    gap: 10vh;
+  }
 }
 
 @media (min-width: 1024px) {

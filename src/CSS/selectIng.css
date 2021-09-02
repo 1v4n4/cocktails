@@ -1,7 +1,7 @@
 .ing-btn-div {
   display: flex;
   flex-wrap: wrap;
-  margin: 18vh 10vh 0 10vh;
+  margin: 22vh 10vh 0 10vh;
 }
 
 .ing-btn {
@@ -25,4 +25,16 @@
 
 #four {
   padding-top: 5vh;
+}
+
+@media (min-width: 768px) {
+  .ing-btn-div {
+    margin: 21vh 10vh 12vh 10vh;
+  }
+}
+
+@media (min-width: 1024px) {
+  .ing-btn-div {
+    margin: 18vh 10vh 0 10vh;
+  }
 }
