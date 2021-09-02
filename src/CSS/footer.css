@@ -1,13 +1,12 @@
 footer {
-  display: flex;
-  justify-content: space-between;
-  padding: 0 4vh 0 2vh;
+  padding: 1vh;
   background: var(--pinkk);
-  height: 5vh;
+  height: 12vh;
   width: 100%;
   box-sizing: border-box;
   position: fixed;
   bottom: 0;
+  text-align: center;
 }
 
 .social-icon {
@@ -21,7 +20,7 @@ footer {
 
 .credits-p {
   color: var(--pinkish);
-  text-align: left;
+  text-align: center;
   margin-top: -0.01vh;
   padding-top: 1vh;
 }
@@ -39,8 +38,22 @@ footer {
   font-size: 2.5vh;
 }
 
+@media (min-width: 768px) {
+  footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vh 4vh 0 2vh;
+    height: 8vh;
+  }
+
+  .credits-p {
+    text-align: left;
+  }
+}
+
 @media (min-width: 1024px) {
   footer {
-    padding: 0 10vh;
+    height: 7vh;
+    padding: 1vh 10vh;
   }
 }

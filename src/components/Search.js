@@ -12,7 +12,7 @@ const Search = ({ setSearch, fetchSearch }) => {
   /* eslint-disable */
   return (
     <form className="search-form">
-      <h2 className="search-txt"> ha
+      <h2 className="search-txt">
         There are hundreds of recipes, all the cocktails you've
         ever wanted to try!
         <br />

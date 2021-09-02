@@ -1,6 +1,6 @@
 
 .search-form {
-  margin: 20vh 7vh 0 2vh;
+  margin: 24vh 7vh 0 2vh;
 }
 
 .search-txt {
@@ -42,7 +42,7 @@ input:hover {
   }
 
   .search-form {
-    margin-top: 20vh;
+    margin-top: 8vh;
     padding-top: 5vh;
     width: 70%;
   }
