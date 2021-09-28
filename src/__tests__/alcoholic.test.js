@@ -5,7 +5,7 @@ import renderer from 'react-test-renderer';
 import Alcoholic from '../containers/Alcoholic';
 import createTestStore from './store';
 
-describe('MoviesList', () => {
+describe('Alcoholic drinks page', () => {
   let store;
   beforeEach(() => {
     store = createTestStore();
