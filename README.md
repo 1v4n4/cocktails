@@ -1,5 +1,5 @@
 # Fix a drink
-This project is a cocktails recipes website with responsive design that uses The Cocktail Database API (thecocktaildb.com).
+This project is a cocktails recipes website with a responsive design that uses The Cocktail Database API (thecocktaildb.com).
 Users can get hundreds of od recipes, searching by name or ingredient or using various filters - categories, alphabet, alcoholic, nonalcoholic...
 
 ![Screenshot](./src/assets/screenshot3.png)
