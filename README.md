@@ -72,7 +72,7 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 👤 **Ivana Novaković-Leković**
 
 - [Github](https://github.com/1v4n4)
-- [Twitter](https://twitter.com/codeIv1)
+- [Twitter](https://twitter.com/_1v4n4)
 - [LinkedIn](https://www.linkedin.com/in/1v4n4/)
 
 ## Contributing
