@@ -14,7 +14,7 @@ Users can get hundreds of od recipes, searching by name or ingredient or using v
 - CSS
 
 ## Live link
-[Fix a drink](https://fix-a-drink.herokuapp.com/)
+[Fix a drink](https://fix-a-drink.netlify.app/)
 
 ## Getting Started
 
